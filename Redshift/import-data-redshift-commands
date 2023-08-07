@@ -1,0 +1,33 @@
+1) Download the file 
+    curl -O -l https://raw.githubusercontent.com/noorin-hasan/AWS-Certified-Database-Specialty/main/Redshift/redshift-data.csv
+2) Create a bucket in S3 
+    aws s3 mb s3://<bucket-name>
+    aws s3 mb s3://redshift-import-0706
+3) Upload the file to the S3 bucket
+    aws s3api put-object --bucket <bucket-name> --key redshift-data.csv --body redshift-data.csv
+    aws s3api put-object --bucket redshift-import-0706 --key redshift-data.csv --body redshift-data.csv
+4) Confirm that the file has been successfully uploaded to S3 
+    aws s3 ls <bucket-name>
+    aws s3 ls redshift-import-0706
+5) Retrieve the endpoint of the Redshift cluster
+    aws redshift describe-clusters | head -25
+6) Export the endpoint to the environment variable
+    export PGHOST=<endpoint-obtained-from-previous-step>
+7) Retrieve the ARN of the IAM role 
+    aws iam get-role --role-name <rolename>
+    aws iam get-role --role-name import-redshift-role
+8) Retrieve the bucket name if needed
+    aws s3 ls
+9) Use the echo command to pass in the endpoint 
+    echo $PGHOST
+10) Connect to Redshift 
+    psql -U <username> -p 5439 <databasename>
+    psql -U masteruser -p 5439 import-test
+11) Create a table in Redshift 
+    create table <tablename> (column_name data_type, column_name data_type, column_name data_type, column_name data_type);
+    create table users_import (ID int, Name varchar, Department varchar, ExpenseCode int);
+12) Copy the data to Redshift 
+    copy <table-name> from <'s3-path'> iam_role <'role-arn'>
+    copy users_import from 's3://redshift-import-0706/redshift-data.csv' iam_role 'arn:aws:iam::283691328029:role/import-redshift-role' delimiter ',';
+
+
