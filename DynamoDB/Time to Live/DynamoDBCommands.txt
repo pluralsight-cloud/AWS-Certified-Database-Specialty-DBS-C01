@@ -1,0 +1,15 @@
+1) Launch the AWS CloudShell and run the following command to create a SessionData table in DynamoDB:
+
+aws dynamodb create-table --table-name SessionData --attribute-definitions \
+AttributeName=UserID,AttributeType=N --key-schema \
+AttributeName=UserID,KeyType=HASH \
+--provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
+
+2) Download the session-data-items.json file to your CloudShell environment:
+curl -O https://raw.githubusercontent.com/noorin-hasan/AWS-Certified-Database-Specialty/main/DynamoDB/Time%20to%20Live/session-data-items.json
+
+3) Populate the table you just created with the file you just downloaded: 
+aws dynamodb batch-write-item --request-items file://session-data-items.json
+
+4) Either enable the TTL feature on the SessionData table via the command below or turn it on using the console. 
+aws dynamodb update-time-to-live --table-name SessionData --time-to-live-specification Enabled=true,AttributeName=ExpirationTime
