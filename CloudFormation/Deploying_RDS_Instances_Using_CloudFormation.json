@@ -9,8 +9,7 @@
         "Engine": "mysql",
         "MasterUsername": "admin",
         "MasterUserPassword": "MyCloudGuruPassword321",
-        "DBName": "cloudgurudb", 
-
+        "DBName": "cloudgurudb"
       }
     }
   }
