@@ -4,6 +4,7 @@
     "MyDBInstance": {
       "Type": "AWS::RDS::DBInstance",
       "Properties": {
+        "DBInstanceIdentifier": "CloudGuruDBInstanceIdentifier",
         "AllocatedStorage": "20",
         "DBInstanceClass": "db.t2.micro",
         "Engine": "mysql",
