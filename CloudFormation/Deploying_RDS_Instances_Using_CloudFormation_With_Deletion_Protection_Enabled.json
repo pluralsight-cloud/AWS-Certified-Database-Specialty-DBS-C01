@@ -10,8 +10,7 @@
         "MasterUsername": "admin",
         "MasterUserPassword": "MyCloudGuruPassword321",
         "DBName": "cloudgurudb", 
-        "DeletionProtection": true, 
-
+        "DeletionProtection": true
       }
     }
   }
