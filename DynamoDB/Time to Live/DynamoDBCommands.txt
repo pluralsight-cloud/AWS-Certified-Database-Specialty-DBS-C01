@@ -6,7 +6,7 @@ AttributeName=UserID,KeyType=HASH \
 --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
 
 2) Download the session-data-items.json file to your CloudShell environment:
-curl -O https://raw.githubusercontent.com/noorin-hasan/AWS-Certified-Database-Specialty/main/DynamoDB/Time%20to%20Live/session-data-items.json
+curl -O https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Database-Specialty-DBS-C01/main/DynamoDB/Time%20to%20Live/session-data-items.json
 
 3) Populate the table you just created with the file you just downloaded: 
 aws dynamodb batch-write-item --request-items file://session-data-items.json
