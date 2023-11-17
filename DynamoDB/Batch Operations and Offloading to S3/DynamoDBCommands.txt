@@ -12,4 +12,4 @@ curl -O https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Databa
 aws dynamodb batch-write-item --request-items file://items.json
 
 4) Retrieve the data using BatchGetItem
-aws dynamodb batch-get-item --request-items file://batchget.json
+aws dynamodb batch-get-item --request-items file://batchgetitems.json
