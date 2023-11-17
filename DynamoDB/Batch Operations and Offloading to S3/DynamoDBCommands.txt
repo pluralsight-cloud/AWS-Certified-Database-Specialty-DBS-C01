@@ -8,8 +8,11 @@ AttributeName=Id,KeyType=HASH \
 2) Download the items.json file to your CloudShell environment:
 curl -O https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Database-Specialty-DBS-C01/main/DynamoDB/Batch%20Operations%20and%20Offloading%20to%20S3/items.json
 
-3) Populate the table you just created with the file you just downloaded: 
+3) Download the batchgetitems.json
+curl -O https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Database-Specialty-DBS-C01/main/DynamoDB/Batch%20Operations%20and%20Offloading%20to%20S3/batchgetitems.json
+
+4) Populate the table you just created with the file you just downloaded: 
 aws dynamodb batch-write-item --request-items file://items.json
 
-4) Retrieve the data using BatchGetItem
+5) Retrieve the data using BatchGetItem
 aws dynamodb batch-get-item --request-items file://batchgetitems.json
