@@ -1,0 +1,256 @@
+{
+	"ProductCatalogA": [{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "201"
+					},
+					"ProductCategory": {
+						"S": "Bicycle"
+					},
+					"Description": {
+						"S": "Womens Road Bike"
+					},
+					"BicycleType": {
+						"S": "Road"
+					},
+					"Brand": {
+						"S": "Raleigh"
+					},
+					"Price": {
+						"N": "399"
+					},
+					"Color": {
+						"S": "Red"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike1.png"
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "403"
+					},
+					"ProductCategory": {
+						"S": "Helmet"
+					},
+					"Description": {
+						"S": "Womens Cycling Helmet"
+					},
+					"Size": {
+						"S": "Small"
+					},
+					"Price": {
+						"S": "99"
+					},
+					"Color": {
+						"S": "Black"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike2.png"
+				}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "411"
+					},
+					"ProductCategory": {
+						"S": "Book"
+					},
+					"Description": {
+						"S": "The Read Aloud Cloud"
+					},
+					"Author": {
+						"S": "Forrest Brazeal"
+					},
+					"Price": {
+						"N": "19.99"
+					},
+					"Format": {
+						"S": "Hardback"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike3.png"
+				}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "563"
+					},
+					"ProductCategory": {
+						"S": "Helmet"
+					},
+					"Description": {
+						"S": "Mens Cycling Helmet"
+					},
+					"Size": {
+						"S": "Small"
+					},
+					"Price": {
+						"N": "75"
+					},
+					"Color": {
+						"S": "Blue"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike4.png"
+				}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "543"
+					},
+					"ProductCategory": {
+						"S": "Helmet"
+					},
+					"Description": {
+						"S": "Womens Cycling Helmet"
+					},
+					"Size": {
+						"S": "Medium"
+					},
+					"Price": {
+						"N": "199"
+					},
+					"Color": {
+						"S": "Red"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike5.png"
+				}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "493"
+					},
+					"ProductCategory": {
+						"S": "Helmet"
+					},
+					"Description": {
+						"S": "Childs Cycling Helmet"
+					},
+					"Size": {
+						"S": "Small"
+					},
+					"Price": {
+						"N": "99"
+					},
+					"Color": {
+						"S": "Black"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike7.png"
+				}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "347"
+					},
+					"ProductCategory": {
+						"S": "Helmet"
+					},
+					"Description": {
+						"S": "Womens Cycling Helmet"
+					},
+					"Size": {
+						"S": "Small"
+					},
+					"Price": {
+						"N": "79"
+					},
+					"Color": {
+						"S": "Blue"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike8.png"
+				}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "467"
+					},
+					"ProductCategory": {
+						"S": "Bicycle"
+					},
+					"Description": {
+						"S": "Mens Road Bike"
+					},
+					"BicycleType": {
+						"S": "Road"
+					},
+					"Brand": {
+						"S": "Raleigh"
+					},
+					"Price": {
+						"N": "250"
+					},
+					"Color": {
+						"S": "Blue"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike9.png"
+				}
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"Id": {
+						"N": "566"
+					},
+					"ProductCategory": {
+						"S": "Bicycle"
+					},
+					"Description": {
+						"S": "Mens Mountain Bike"
+					},
+					"BicycleType": {
+						"S": "Mountain"
+					},
+					"Brand": {
+						"S": "Raleigh"
+					},
+					"Price": {
+						"N": "599"
+					},
+					"Color": {
+						"S": "Black"
+					},
+          "Image": {
+						"S":"cloudguru-binary-images/bike10.png"
+				}
+				}
+			}
+		}
+
+
+	]
+}
