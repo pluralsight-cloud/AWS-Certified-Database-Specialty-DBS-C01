@@ -23,8 +23,9 @@
 					"Color": {
 						"S": "Red"
 					},
-          "Image": {
+          				"Image": {
 						"S":"cloudguru-binary-images/bike1.png"
+					}
 				}
 			}
 		},
@@ -49,11 +50,11 @@
 					"Color": {
 						"S": "Black"
 					},
-          "Image": {
+          				"Image": {
 						"S":"cloudguru-binary-images/bike2.png"
+						}
+					}
 				}
-				}
-			}
 		},
 		{
 			"PutRequest": {
@@ -76,9 +77,9 @@
 					"Format": {
 						"S": "Hardback"
 					},
-          "Image": {
+         				 "Image": {
 						"S":"cloudguru-binary-images/bike3.png"
-				}
+					}
 				}
 			}
 		},
@@ -103,9 +104,9 @@
 					"Color": {
 						"S": "Blue"
 					},
-          "Image": {
+          				"Image": {
 						"S":"cloudguru-binary-images/bike4.png"
-				}
+					}
 				}
 			}
 		},
@@ -130,9 +131,9 @@
 					"Color": {
 						"S": "Red"
 					},
-          "Image": {
+          				"Image": {
 						"S":"cloudguru-binary-images/bike5.png"
-				}
+					}
 				}
 			}
 		},
@@ -157,9 +158,9 @@
 					"Color": {
 						"S": "Black"
 					},
-          "Image": {
+         				 "Image": {
 						"S":"cloudguru-binary-images/bike7.png"
-				}
+					}
 				}
 			}
 		},
@@ -184,9 +185,9 @@
 					"Color": {
 						"S": "Blue"
 					},
-          "Image": {
+          				"Image": {
 						"S":"cloudguru-binary-images/bike8.png"
-				}
+					}
 				}
 			}
 		},
@@ -214,9 +215,9 @@
 					"Color": {
 						"S": "Blue"
 					},
-          "Image": {
+          				"Image": {
 						"S":"cloudguru-binary-images/bike9.png"
-				}
+					}
 				}
 			}
 		},
@@ -244,9 +245,9 @@
 					"Color": {
 						"S": "Black"
 					},
-          "Image": {
+        				  "Image": {
 						"S":"cloudguru-binary-images/bike10.png"
-				}
+					}
 				}
 			}
 		}
