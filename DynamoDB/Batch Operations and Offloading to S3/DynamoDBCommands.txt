@@ -1,15 +1,23 @@
-1) Launch the AWS CloudShell and run the following command to create a DynamoDB table:
+1) Launch the AWS CloudShell and run the following commands to create two DynamoDB tables:
 
-aws dynamodb create-table --table-name ProductCatalog --attribute-definitions \
+aws dynamodb create-table --table-name ProductCatalogA --attribute-definitions \
 AttributeName=Id,AttributeType=N --key-schema \
 AttributeName=Id,KeyType=HASH \
 --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
 
-2) Download the items.json file to your CloudShell environment:
-curl -O https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Database-Specialty-DBS-C01/main/DynamoDB/Batch%20Operations%20and%20Offloading%20to%20S3/items.json
+aws dynamodb create-table --table-name ProductCatalogB --attribute-definitions \
+AttributeName=Id,AttributeType=N --key-schema \
+AttributeName=Id,KeyType=HASH \
+--provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
 
-3) Populate the table you just created with the file you just downloaded: 
-aws dynamodb batch-write-item --request-items file://items.json
+2) Download the items-a.json and items-b.json files to your CloudShell environment:
+curl -O https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Database-Specialty-DBS-C01/main/DynamoDB/Batch%20Operations%20and%20Offloading%20to%20S3/items-a.json
+
+curl -O  https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Database-Specialty-DBS-C01/main/DynamoDB/Batch%20Operations%20and%20Offloading%20to%20S3/items-b.json
+
+3) Populate the tables you just created with the file you just downloaded: 
+aws dynamodb batch-write-item --request-items file://items-a.json
+aws dynamodb batch-write-item --request-items file://items-b.json
 
 4) Download the batchgetitems.json
 curl -O https://raw.githubusercontent.com/pluralsight-cloud/AWS-Certified-Database-Specialty-DBS-C01/main/DynamoDB/Batch%20Operations%20and%20Offloading%20to%20S3/batchgetitems.json
